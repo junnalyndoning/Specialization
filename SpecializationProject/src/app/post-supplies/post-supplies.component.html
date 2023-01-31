@@ -11,34 +11,24 @@
     <div class="sidebar-menu">
       <ul>
         <li>
-          <a routerlink="/admindashboard">
+          <a routerLink="/admindashboard">
             <span class="las la-igloo"></span>
             <span>Dashboard</span></a>
         </li>
         <li>
-          <a routerlink="suppliersrequest">
+          <a routerLink="/suppliersrequest">
             <span class="las la-user-circle"></span>
             <span>Supplier Request</span></a>
         </li>
         <li>
-          <a routerlink="orders">
+          <a routerLink="/orders">
             <span class="las la-shopping-bag"></span>
             <span>Orders</span></a>
         </li>
         <li>
-          <a routerlink="postsupplies" class="active">
+          <a routerLink="/postsupplies" class="active">
             <span class="las la-users"></span>
-            <span>Post Supplies</span></a>
-        </li>
-        <li>
-          <a routerlink="sales">
-            <span class="las la-receipt"></span>
-            <span>Sales</span></a>
-        </li>
-        <li>
-          <a routerlink="logout">
-            <span class="las la-sign-out-alt"></span>
-            <span>Logout</span></a>
+            <span>Post New Product</span></a>
         </li>
       </ul>
     </div>
@@ -52,7 +42,7 @@
           <span class="las la-bars"></span>
 
         </label>
-        Dashboard
+        Post New Product
       </h2>
 
       <div class="search-wrapper">
@@ -74,108 +64,35 @@
 
       <div class="recent-grid">
         <div class="projects">
-
           <div class="card">
             <div class="card-header">
-
+              <div class="picture">
+                <img src="assets/images/image1.jpg" alt="" width="250" height="250"
+                  style="margin-top: 30px;margin-left: 7rem;">
+                <br>
+                <form>
+                  <input class="upload" name="profile_image" type="file" required style="margin-left: 9rem;">
+                </form>
+              </div>
 
               <div class="list">
-                <!-- <img src="assets/images/image1.jpg" style="width: 30rem; height: 20rem; margin-left: 25rem;"> -->
-                <p for="fname">Products</p><br>
+                <p for="fname"><b>Products</b></p><br>
                 <input class="textfield" type="text" id="fname" name="fname" value=""><br><br>
-                <p for="lname">Date Available</p><br>
+                <p for="lname"><b>Delivery Address</b></p><br>
+                <input class="textfield" type="text" id="address" name="address" value=""><br><br>
+                <p for="lname"><b>Available Date</b></p><br>
                 <input class="textfield" type="text" id="lname" name="lname" value=""><br><br>
-                <p for="quantity">Quantity</p><br>
-                <input class="textfield" type="text" id="quantity" name="quantity" value=""><br><br>
-                <p for="price">Price</p><br>
+                <p for="price"><b>Price </b></p><br>
                 <input class="textfield" type="text" id="price" name="price" value=""><br><br>
-                <p for="status">Status</p><br>
-                <input class="textfield" type="text" id="status" name="status" value=""><br><br>
+                <p for="quantity"><b>Quantity</b></p><br>
+                <input class="textfield" type="text" id="quantity" name="quantity" value=""><br><br>
                 <input class="post" type="submit" value="Post">
               </div>
 
             </div>
-
-            <!-- <div class="card-body">
-              <table width="100%">
-                <thead>
-                  <tr class="inform">
-                    <td>Products</td>
-                    <td>Date Available</td>
-                    <td>Quantity</td>
-                    <td>Price</td>
-                    <td>Status</td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="information">
-                    <td>Apple</td>
-                    <td>February 04, 2023</td>
-                    <td>200 pcs</td>
-                    <td>15 per pc</td>
-                    <td><button class="first">Confirm</button> <button class="second">Decline</button></td>
-                  </tr>
-                  <tr class="information">
-                    <td>Grapes</td>
-                    <td>February 11, 2023</td>
-                    <td>80 Kilos</td>
-                    <td>250 per kilo</td>
-                    <td><button class="first">Confirm</button> <button class="second">Decline</button></td>
-                  </tr>
-                  <tr class="information">
-                    <td>Orange</td>
-                    <td>February 18, 2023</td>
-                    <td>150 pcs</td>
-                    <td>10 per pcs</td>
-                    <td><button class="first">Confirm</button> <button class="second">Decline</button></td>
-                  </tr>
-                  <tr class="information">
-                    <td>Cabbage</td>
-                    <td>February 24, 2023</td>
-                    <td>100 Kilos</td>
-                    <td>80 per kilo</td>
-                    <td><button class="first">Confirm</button> <button class="second">Decline</button></td>
-                  </tr>
-                  <tr class="information">
-                    <td>Carrots</td>
-                    <td>February 28, 2023</td>
-                    <td>50 Kilos</td>
-                    <td>120 per kilo</td>
-                    <td><button class="first">Confirm</button> <button class="second">Decline</button></td>
-                  </tr>
-                  <tr class="information">
-                    <td>Cucumber</td>
-                    <td>March 02, 2023</td>
-                    <td>40 Kilos</td>
-                    <td>85 per kilo</td>
-                    <td><button class="first">Confirm</button> <button class="second">Decline</button></td>
-                  </tr>
-                  <tr class="information">
-                    <td>Avocados</td>
-                    <td>March 05, 2023</td>
-                    <td>150 pcs</td>
-                    <td>25 per pcs</td>
-                    <td><button class="first">Confirm</button> <button class="second">Decline</button></td>
-                  </tr>
-
-                </tbody>
-
-              </table>
-              <div class="card-body">
-                <div class="table-responsive"></div>
-
-              </div>
-            </div>
-
           </div>
-
-        </div> -->
+        </div>
       </div>
-    </div>
-  </div>
     </main>
-
-
   </div>
-
 </body>

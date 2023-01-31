@@ -4,16 +4,15 @@ import { SuppliersRequestComponent } from './suppliers-request/suppliers-request
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { PostSuppliesComponent } from './post-supplies/post-supplies.component';
 import { OrdersComponent } from './orders/orders.component';
-import { SalesComponent } from './sales/sales.component';
-import { LogoutComponent } from './logout/logout.component';
+
 
 const routes: Routes = [
   {path: 'suppliersrequest', component: SuppliersRequestComponent},
   {path: 'admindashboard', component: AdminDashboardComponent},
   {path: 'postsupplies', component: PostSuppliesComponent},
   {path: 'orders', component: OrdersComponent},
-  {path: 'sales', component: SalesComponent},
-  {path: 'logout', component: LogoutComponent},
+  { path: '',   redirectTo: '/admindashboard', pathMatch: 'full' }
+
 
 
 ];
@@ -22,4 +21,9 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+
+}
+export const routingComponents = [ AdminDashboardComponent, SuppliersRequestComponent, PostSuppliesComponent, OrdersComponent ]
+
+

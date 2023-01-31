@@ -51,10 +51,11 @@
   display: block;
   font-size: 1.1rem;
 }
-a:hover{
+
+a:hover {
   background: #fff;
   padding-top: .5rem;
-  padding-bottom:.5rem;
+  padding-bottom: .5rem;
   color: rgba(12, 243, 12, 0.937);
   border-radius: 30px 0px 0px 30px;
 }
@@ -62,7 +63,7 @@ a:hover{
 .sidebar-menu a.active {
   background: #fff;
   padding-top: .5rem;
-  padding-bottom:.5rem;
+  padding-bottom: .5rem;
   color: rgba(12, 243, 12, 0.937);
   border-radius: 30px 0px 0px 30px;
 }
@@ -179,38 +180,8 @@ main {
   min-height: calc(100vh - 90px);
 }
 
-/* .cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem
-}
-
-
-.card-single {
-  display: flex;
-  justify-content: space-between;
-  background: #fff;
-  padding: 2rem;
-  border-radius: 2px;
-}
-
-.card-single div:last-child span {
-  font-size: 3rem;
-  color: -webkit-linear-gradient(left, #d0d349, #32a438);
-} */
-
-/* .card-single div:first-child span {
-  color: rgba(12, 243, 12, 0.937);
-  font-size: 1.5rem;
-}
-
-.card-single:last-child {
-  background: -webkit-linear-gradient(left, #d0d349, #32a438);
-} */
-
 .inform td {
   text-align: center;
-
 }
 
 .information {
@@ -227,8 +198,6 @@ button {
   width: 4rem;
   height: 1.5rem;
   border: none;
-
-
 }
 
 .first:hover {
@@ -261,7 +230,6 @@ button {
 .card {
   background: #D8FFD8;
   border-radius: 5px;
-
 }
 
 .card-header {
@@ -282,7 +250,6 @@ button {
   font-size: .8rem;
   padding: .5rem 1rem;
   border: 1px solid -webkit-linear-gradient(left, #d0d349, #32a438);
-  ;
 }
 
 .card-header button:hover {
@@ -306,7 +273,6 @@ td {
   padding: .5rem 1rem;
   font-size: .9rem;
   color: #222;
-
 }
 
 @media only screen and (max-width: 1200px) {
